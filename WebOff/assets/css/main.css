@@ -1,0 +1,614 @@
+/**
+* Template Name: MyResume
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+* Updated: Jun 29 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+--------------------------------------------------------------*/
+:root {
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  --heading-font: "Raleway", sans-serif;
+  --nav-font: "Poppins", sans-serif;
+
+  --background-color: #ffffff;
+  --default-color: #272829;
+  --heading-color: #45505b;
+  --accent-color: #0563bb;
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+
+  --nav-color: #45505b;
+  --nav-hover-color: #0563bb;
+  --nav-mobile-background-color: #ffffff;
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: #212529;
+  --nav-dropdown-hover-color: #0563bb;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+.header {
+  color: var(--default-color);
+  position: fixed;
+  top: 0;
+  left: 0px;
+  bottom: 0;
+  padding: 0 15px;
+  transition: all ease-in-out 0.3s;
+  overflow-y: auto;
+  z-index: 997;
+  min-width: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 1199px) {
+  .header {
+    background-color: var(--background-color);
+    border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 96%);
+    width: 300px;
+    left: -100%;
+    border-radius: 0 30px 30px 0; 
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu: icônes visibles, labels entièrement cachés
+# sauf pour .home ; labels apparaissent seulement au survol (desktop)
+--------------------------------------------------------------*/
+.navmenu {
+  padding: 0;
+  z-index: 9997;
+}
+
+.navmenu ul {
+  list-style: none;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+
+.navmenu a,
+.navmenu a:focus {
+  color: var(--nav-color);
+  font-family: var(--nav-font);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--default-color), transparent 78%);
+  height: 56px;
+  overflow: hidden;
+  transition: max-width 180ms ease, transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+  box-shadow: 0 6px 18px rgba(85, 138, 238, 0.397);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 92%);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.navmenu a i,
+.navmenu a:focus i {
+  font-size: 24px;
+  min-width: 28px;
+  text-align: right;
+}
+
+.navmenu a span,
+.navmenu a:focus span {
+  display: none;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+
+@media (min-width: 992px) {
+  .navmenu a,
+  .navmenu a:focus {
+    max-width: 56px; 
+  }
+
+  .navmenu a:hover,
+  .navmenu li:hover > a {
+    max-width: 140px; 
+    transform: translateX(6px);
+    box-shadow: 0 10px 30px color-mix(in srgb, var(--accent-color), transparent 85%);
+    background: var(--nav-hover-color);
+    color: var(--contrast-color);
+  }
+
+  .navmenu a:hover span,
+  .navmenu li:hover > a span {
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .navmenu a.home {
+    max-width: 220px;
+    background: var(--nav-hover-color);
+    color: var(--contrast-color);
+  }
+  .navmenu a.home span {
+    display: inline-block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 991px) {
+  .navmenu a span {
+    display: inline-block;
+    opacity: 1;
+    transform: none;
+  }
+
+  .navmenu a {
+    max-width: none;
+    width: 100%;
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Footer
+--------------------------------------------------------------*/
+.footer {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-size: 14px;
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.footer .copyright {
+  padding-top: 25px;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 96%);
+}
+
+/*--------------------------------------------------------------
+# Section Titles
+--------------------------------------------------------------*/
+.section-title {
+  text-align: center;
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.section-title h2:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 160px;
+  height: 1px;
+  background: color-mix(in srgb, var(--default-color), transparent 85%);
+  left: 0;
+  right: 0;
+  bottom: 1px;
+  margin: auto;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--accent-color);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/*--------------------------------------------------------------
+# Global Sections
+--------------------------------------------------------------*/
+section,
+.section {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 60px 0;
+  overflow: clip;
+}
+
+/*--------------------------------------------------------------
+# Hero Section (background via CSS)
+--------------------------------------------------------------*/
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../img/FondDecran.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero img {
+  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 3;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  color: #034a86;
+}
+
+.hero h2:hover {
+  color: #0987eeec;
+}
+
+.hero .typed {
+  color: #032747; 
+}
+
+.hero p {
+  margin: 5px 0 0 0;
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 20px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About Section (enlarged elements for larger display)
+--------------------------------------------------------------*/
+.about .section-title h2 {
+  font-size: 36px;
+  padding-bottom: 30px;
+}
+
+.about .section-title p {
+  font-size: 18px;
+}
+
+.about .content h2 {
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.about .content p,
+.about .content .fst-italic {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.about .col-lg-4 img {
+  max-width: 240px;
+  width: 100%;
+}
+
+.about.min-vh-100 {
+  padding: 0;
+}
+
+@media (min-width: 992px) {
+  .about .row.align-items-center {
+    gap: 2.5rem;
+  }
+
+  .about .col-lg-8.content {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .about .section-title h2 {
+    font-size: 28px;
+  }
+
+  .about .content h2 {
+    font-size: 22px;
+  }
+
+  .about .content p,
+  .about .section-title p {
+    font-size: 16px;
+  }
+
+  .about .col-lg-4 img {
+    max-width: 180px;
+  }
+}
+
+/*--------------------------------------------------------------
+# About - Ville & Etude sizing + spacing
+--------------------------------------------------------------*/
+.about .content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.about .content ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.about .content ul li i {
+  font-size: 1.05rem;
+  color: inherit;
+  min-width: 20px;
+}
+
+.about .content ul li strong {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.about .content ul li span {
+  font-size: 18px;
+  color: #555;
+}
+
+@media (max-width: 575px) {
+  .about .content ul li {
+    font-size: 16px;
+    gap: 0.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .about .content ul li strong {
+    font-size: 17px;
+  }
+
+  .about .content ul li span {
+    font-size: 16px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Portfolio overlays and subtle separators (more transparent)
+--------------------------------------------------------------*/
+.portfolio .portfolio-item .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: -100%;
+  z-index: 3;
+  transition: all ease-in-out 0.5s;
+  background: color-mix(in srgb, var(--background-color), transparent 95%);
+  padding: 15px;
+}
+
+.section-title h2:before { background: color-mix(in srgb, var(--default-color), transparent 85%); }
+.footer .copyright { border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 96%); }
+
+
+.portfolio-filters {
+  padding: 0;
+  margin: 0 auto 30px auto;
+  list-style: none;
+  text-align: center; 
+  display: flex;      
+  flex-wrap: wrap;    
+  justify-content: center; 
+  gap: 10px;          
+}
+
+.portfolio-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50px; 
+  background: #f4f4f4; 
+}
+
+.portfolio-filters li:hover, 
+.portfolio-filters li.filter-active {
+  color: #fff;
+}
+
+.portfolio-filters li[data-filter="*"]:hover,
+.portfolio-filters li[data-filter="*"].filter-active {
+  background: #0059ff;
+}
+
+.portfolio-filters li[data-filter=".filter-admin"]:hover,
+.portfolio-filters li[data-filter=".filter-admin"].filter-active {
+  background: #ff1e1e;
+}
+
+.portfolio-filters li[data-filter=".filter-connect"]:hover,
+.portfolio-filters li[data-filter=".filter-connect"].filter-active {
+  background: #ff9900;
+}
+
+.portfolio-filters li[data-filter=".filter-code"]:hover,
+.portfolio-filters li[data-filter=".filter-code"].filter-active {
+  background: #ffc400;
+}
+
+.portfolio-filters li[data-filter=".filter-secure"]:hover,
+.portfolio-filters li[data-filter=".filter-secure"].filter-active {
+  background: #5cc72b;
+}
+
+.portfolio-filters li[data-filter=".filter-monitor"]:hover,
+.portfolio-filters li[data-filter=".filter-monitor"].filter-active {
+  background: #3b39ac;
+}
+
+.portfolio-content {
+  background: var(--surface-color);
+  border: 3px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.portfolio-item.filter-admin .portfolio-content {
+  border-color: #ff1e1e;
+}
+
+.portfolio-item.filter-connect .portfolio-content {
+  border-color: #ff9900;
+}
+
+.portfolio-item.filter-code .portfolio-content {
+  border-color: #ffc400;
+}
+
+.portfolio-item.filter-secure .portfolio-content {
+  border-color: #5cc72b;
+}
+
+.portfolio-item.filter-monitor .portfolio-content {
+  border-color: #3b39ac;
+}
+
+.isotope-layout .filter-active[data-filter="*"] ~ .isotope-container .portfolio-item {
+  width: 33.33% !important;
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+}
+
+.isotope-layout .filter-active[data-filter="*"] ~ .isotope-container .portfolio-description {
+  display: none !important;
+}
+
+.isotope-layout .filter-active[data-filter="*"] ~ .isotope-container .portfolio-img {
+  width: 100% !important;
+}
+
+.portfolio-item {
+  width: 100% !important;
+  transition: 0.5s ease-in-out;
+}
+
+.portfolio-description {
+  padding: 30px;
+  display: block;
+}
+
+.portfolio-description h4 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.details-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* --- Ajustement Mobile --- */
+@media (max-width: 992px) {
+  .isotope-layout .filter-active[data-filter="*"] ~ .isotope-container .portfolio-item {
+    width: 50% !important; /* 2 colonnes sur tablette */
+  }
+}
+@media (max-width: 576px) {
+  .isotope-layout .filter-active[data-filter="*"] ~ .isotope-container .portfolio-item {
+    width: 100% !important; /* 1 colonne sur mobile */
+  }
+}
+
+/*--------------------------------------------------------------
+# Basic utilities
+--------------------------------------------------------------*/
+ul { margin: 0; padding: 0; list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+.container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+/* End of restored file */
+
+.pdf-container {
+    width: 100%;
+    height: 85vh; 
+    border: none;
+}
+
+.modal-xl {
+    max-width: 90%;
+}
