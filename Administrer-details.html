@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails Compétence - Administrer</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Style pour la flèche de retour fixe */
+    .back-arrow {
+      position: fixed;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: var(--accent-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .back-arrow:hover {
+      background: #034a86;
+      color: white;
+      left: 20px;
+    }
+    .details-content { padding-top: 100px; }
+    .skill-badge { background: #e7f1ff; color: var(--accent-color); padding: 5px 15px; border-radius: 50px; font-weight: 600; }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html#portfolio" class="back-arrow" title="Retour au portfolio">
+    <i class="bi bi-arrow-left"></i>
+  </a>
+
+  <main id="main" class="details-content">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Administrer les réseaux et l'internet</h2>
+        <span class="skill-badge">Compétence PN R&T</span>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/masonry-portfolio/Adm&reseau.jpg" class="img-fluid rounded-4 mb-4" alt="">
+          <h3>Situations professionnelles</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i>Conception et administration de l’infrastructure du réseau informatique d’une entreprise</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i>Installation et administration des services réseau informatique d’une entreprise</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i>Déploiement et administration des solutions fixes pour les clients d’un opérateur de télécommunication</li>
+          </ul>
+        </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="bg-light p-4 rounded-4 shadow-sm">
+              <h4>Critères d'évaluation</h4>
+              <ul class="list-unstyled">
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Choix des solutions et technologies adaptées</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Respect des fondamentaux de la sécurité</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Résolution de dysfonctionnements</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Respect des règles métiers</li>
+                <li class="mb-3"><i class="bi bi-check-circle-fill text-primary me-2"></i> Veille technologique assurée</li>
+              </ul>
+          </div>
+          
+          <div class="mt-4 p-4 border rounded-4">
+            <h5>Technologies associées</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-danger">SSH / OpenSSL</span>
+              <span class="badge bg-danger">Pare-feu (Iptables/Nftables)</span>
+              <span class="badge bg-danger">Analyse de trames (Wireshark)</span>
+              <span class="badge bg-secondary">Linux Debian</span>
+              <span class="badge bg-secondary">Services sécurisés (DNSSEC, DHCP Snooping)</span>
+              <span class="badge bg-secondary">Scripts Bash/Python</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+          <h3>Niveaux de développement & Apprentissages critiques</h3>
+          <hr>
+          <div class="row g-4">
+            
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #f8d7da !important;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #842029;">Niveau 1 : Assister</h5>
+                  <p class="text-muted small">Assister l'administrateur du réseau</p>
+                  <ul class="ps-3 small">
+                    <li>Maîtriser les lois fondamentales de l'électricité</li>
+                    <li>Comprendre l'architecture des systèmes numériques</li>
+                    <li>Configurer les fonctions de base du réseau local</li>
+                    <li>Maîtriser les principes des systèmes d'exploitation</li>
+                    <li>Identifier les dysfonctionnements du réseau local</li>
+                    <li>Installer un poste client</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #f5b7b1 !important;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #a93226;">Niveau 2 : Administrer</h5>
+                  <p class="text-muted small">Administrer un réseau</p>
+                  <ul class="ps-3 small">
+                    <li>Configurer et dépanner le routage dynamique</li>
+                    <li>Configurer une politique de QoS et sécurité de base</li>
+                    <li>Déployer des postes clients et solutions virtualisées</li>
+                    <li>Déployer des services réseaux avancés et supervision</li>
+                    <li>Identifier les réseaux opérateurs et l'architecture Internet</li>
+                    <li>Travailler en équipe</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm" style="border-top: 5px solid #920000 !important;">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #920000;">Niveau 3 : Concevoir</h5>
+                  <p class="text-muted small">Concevoir un réseau</p>
+                  <ul class="ps-3 small">
+                    <li>Concevoir un projet réseau (Haute dispo, QoS, Sécurité)</li>
+                    <li>Réaliser la documentation technique du projet</li>
+                    <li>Réaliser une maquette de démonstration</li>
+                    <li>Défendre et argumenter un projet</li>
+                    <li>Communiquer avec les acteurs du projet</li>
+                    <li>Gérer le projet et les étapes de mise en œuvre</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+<div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+          <h3>Mes réalisations (Travaux Pratiques R108)</h3>
+          <hr>
+          <div class="card border-0 shadow-sm p-4">
+            <div class="row g-3">
+              
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalAdmin1">
+                  <h6 class="mb-1 small fw-bold">TP n°1 : Bases du Système</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Manipulation des fichiers, navigation et commandes de base Linux.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalAdmin2">
+                  <h6 class="mb-1 small fw-bold">TP n°2 : La commande FIND</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Recherche avancée de fichiers et gestion de l'arborescence.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalAdmin3">
+                  <h6 class="mb-1 small fw-bold">TP n°3 : Droits et Permissions</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Gestion des utilisateurs (chmod) et application de patchs.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalAdmin4">
+                  <h6 class="mb-1 small fw-bold">TP n°4 : Filtres et tris</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Utilisation de grep, sort, cut et exploitation de fichiers textes.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalAdmin5">
+                  <h6 class="mb-1 small fw-bold">Compte-rendu CTP</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Examen pratique : automatisation par script Bash et gestion de processus.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalAdmin1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">TP 1 : Introduction Système</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="assets/pdf/TP1.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAdmin2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">TP 2 : Commande FIND</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="assets/pdf/TP2.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAdmin3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">TP 3 : Droits Chmod</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="assets/pdf/TP3.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAdmin4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">TP 4 : Filtres et tris</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="assets/pdf/TP4.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalAdmin5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Compte-rendu CTP R108</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="assets/pdf/CTP.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails Compétence - Créer</title>
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .back-arrow {
+      position: fixed;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: var(--accent-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .back-arrow:hover {
+      background: #034a86;
+      color: white;
+      left: 20px;
+    }
+    .details-content { padding-top: 100px; }
+    .skill-badge { background: #fff3cd; color: #856404; padding: 5px 15px; border-radius: 50px; font-weight: 600; }
+    pre { margin-bottom: 0; white-space: pre-wrap; word-wrap: break-word; font-family: 'Courier New', Courier, monospace; }
+    .code-link { text-decoration: none; transition: 0.2s; color: #6c757d; font-size: 0.9rem; }
+    .code-link:hover { color: #0d6efd !important; text-decoration: underline; }
+    .card-realisation { border: 1px solid #e9ecef; transition: 0.3s; }
+    .card-realisation:hover { border-color: #0d6efd; background-color: #f8f9fa; }
+  </style>
+</head>
+
+<body>
+
+  <a href="index.html#portfolio" class="back-arrow" title="Retour au portfolio">
+    <i class="bi bi-arrow-left"></i>
+  </a>
+
+  <main id="main" class="details-content">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Créer des outils et applications informatiques pour les R&T</h2>
+        <span class="skill-badge">Compétence PN R&T</span>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <img src="assets/img/masonry-portfolio/Créer.png" class="img-fluid rounded-4 mb-4" alt="Illustration compétence Créer">
+          <h3>Situations professionnelles</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-dash text-warning"></i> Conception, déploiement et maintenance du système d’information d’une entreprise</li>
+            <li class="mb-2"><i class="bi bi-dash text-warning"></i> Automatisation du déploiement et de la maintenance des outils logiciels</li>
+            <li class="mb-2"><i class="bi bi-dash text-warning"></i> Développement d’outils informatiques à usage interne d’une équipe</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-light p-4 rounded-4 shadow-sm border-top border-warning border-4">
+            <h4>Critères d'évaluation</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> en étant à l’écoute des besoins du client</li>
+              <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> en documentant le travail réalisé</li>
+              <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> en utilisant les outils numériques à bon escient</li>
+              <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> en choisissant les outils de développement adaptés</li>
+              <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> en intégrant les problématiques de sécurité</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-12 text-center mb-4">
+          <h3>Mes réalisations (Preuves)</h3>
+          <hr>
+        </div>
+        
+        <div class="col-12">
+          <div class="card border-0 shadow-sm p-4">
+            <h5 class="text-primary mb-3">
+              <i class="bi bi-code-slash"></i> Contrôle TP : Fondamentaux de la programmation Python
+            </h5>
+            <p class="text-muted small mb-4">Série d'exercices d'algorithmique appliqués aux problématiques R&T (réseaux, calculs et structures de données).</p>
+            
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-globe me-2 text-secondary"></i>
+                    <h6 class="mb-0 small fw-bold">Analyse d'adresse IP</h6>
+                  </div>
+                  <p class="text-muted mb-2" style="font-size: 0.85rem;">Script déterminant la nature d'une adresse (Réseau, Broadcast ou Machine) via le dernier octet.</p>
+                  <a href="#" class="code-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalIP">ip.py</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-bar-chart me-2 text-secondary"></i>
+                    <h6 class="mb-0 small fw-bold">Traitement de listes</h6>
+                  </div>
+                  <p class="text-muted mb-2" style="font-size: 0.85rem;">Création dynamique d'une liste d'entiers et calcul automatisé de la moyenne avec arrondi.</p>
+                  <a href="#" class="code-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalListe">liste.py</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-grid-3x3 me-2 text-secondary"></i>
+                    <h6 class="mb-0 small fw-bold">Algorithmique visuelle</h6>
+                  </div>
+                  <p class="text-muted mb-2" style="font-size: 0.85rem;">Génération d'un carré évidé en caractères ASCII basé sur une saisie utilisateur n.</p>
+                  <a href="#" class="code-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalCarre">carre.py</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation">
+                  <div class="d-flex align-items-center mb-1">
+                    <i class="bi bi-input-cursor-text me-2 text-secondary"></i>
+                    <h6 class="mb-0 small fw-bold">Logique de comparaison</h6>
+                  </div>
+                  <p class="text-muted mb-2" style="font-size: 0.85rem;">Script de recherche de valeur minimale entre deux nombres réels flottants.</p>
+                  <a href="#" class="code-link fw-bold" data-bs-toggle="modal" data-bs-target="#modalMin">minimum.py</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalIP" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header white text-white">
+          <h5 class="modal-title small">Code : ip.py</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body bg-dark text-white rounded-bottom border-top border-secondary">
+          <pre><code>ip = input("Adresse ip ? ").split(".")
+if int(ip[3]) == 0:
+    print("Adresse réseau")
+elif int(ip[3]) == 255:
+    print("Adresse broadcast")
+else:
+    print("Adresse machine")</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalListe" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header white text-white">
+          <h5 class="modal-title small">Code : liste.py</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body bg-dark text-white rounded-bottom border-top border-secondary">
+          <pre><code>n = int(input("n ?"))
+l = []
+for i in range (n):
+    l.append(int(input(f"l[{i}]= ")))
+print(f"Liste créer : {l}")
+lm = sum(l)
+lm2 = lm / n
+print(f"La moyenne est de {round (lm2, 2)}")</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCarre" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header white text-white">
+          <h5 class="modal-title small">Code : carre.py</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body bg-dark text-white rounded-bottom border-top border-secondary">
+          <pre><code>n = int(input("n ? "))
+for i in range (1):
+    print("*"*n)
+    for i in range(n-2):
+        print("*","*", sep=" "*int(n-2))
+    print("*"*n)</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalMin" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content border-0">
+        <div class="modal-header white text-white">
+          <h5 class="modal-title small">Code : minimum.py</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body bg-dark text-white rounded-bottom border-top border-secondary">
+          <pre><code>r1 = float(input("Nombre 1 : "))
+r2 = float(input("Nombre 2 : "))
+min_val = min(r1, r2)
+print(f"Le minimum est {min_val}")</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+  </script>
+
+</body>
+</html>
