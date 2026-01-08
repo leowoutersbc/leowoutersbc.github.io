@@ -330,6 +330,11 @@ section,
 /*--------------------------------------------------------------
 # About Section (enlarged elements for larger display)
 --------------------------------------------------------------*/
+
+.about {
+  margin-top: 80px;
+}
+
 .about .section-title h2 {
   font-size: 36px;
   padding-bottom: 30px;
