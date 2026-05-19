@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails Compétence - Connect</title>
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Style pour la flèche de retour fixe */
+    .back-arrow {
+      position: fixed;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: var(--accent-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .back-arrow:hover {
+      background: #034a86;
+      color: white;
+      left: 20px;
+    }
+    .details-content { padding-top: 100px; }
+    .skill-badge { background: #e7f1ff; color: var(--accent-color); padding: 5px 15px; border-radius: 50px; font-weight: 600; }
+    .card-n1 { border-top: 5px solid #ffe5d0 !important; cursor: pointer; }
+    .card-n2 { border-top: 5px solid #ffb37e !important; cursor: pointer; }
+    .card-n3 { border-top: 5px solid #e67e22 !important; cursor: pointer; }
+    .title-n1 { color: #d35400; }
+    .title-n2 { color: #ba4a00; }
+    .title-n3 { color: #a04000; }
+    .panel-n1 { background-color: #fff8f5; border-left: 4px solid #e67e22; }
+    .panel-n2, .panel-n3 { background-color: #f8f9fa; }
+    .panel-title-n1 { color: #d35400; }
+    .chevron-icon { transition: transform 0.3s; }
+    .lock-icon-n2, .lock-icon-n3 { color: #6c757d; }
+    .card-realisation { border: 1px solid #e9ecef; transition: 0.3s; cursor: pointer; }
+    .card-realisation:hover { border-color: #0d6efd; background-color: #f8f9fa; }
+  </style>
+</head>
+
+<body>
+
+  <a href="../index.html#portfolio" class="back-arrow" title="Retour au portfolio">
+    <i class="bi bi-arrow-left"></i>
+  </a>
+
+  <main id="main" class="details-content">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Connecter les entreprises et les usagers</h2>
+        <span class="skill-badge">Compétence PN R&T</span>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <img src="../assets/img/masonry-portfolio/Communication.avif" class="img-fluid rounded-4 mb-4" alt="">
+          <h3>Situations professionnelles</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Déploiement des supports et systèmes de transmission</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Mise en service et administration des équipements d’accès fixe ou mobile d’un opérateur de télécommunications</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Déploiement et administration des accès sans fil pour l’entreprise</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-primary"></i> Déploiement des systèmes de communications</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-light p-4 rounded-4 shadow-sm">
+            <h4>Critères d'évaluation</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i> Communication client (parfois en anglais)</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i> Preuve d’une démarche scientifique</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i> Choix des solutions et technologies adaptés</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-warning me-2"></i> Solutions respectueuses de l'environnement</li>
+            </ul>
+          </div>
+          
+          <div class="mt-4 p-4 border rounded-4">
+            <h5>Technologies associées</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-danger">VPN & Accès distants</span>
+              <span class="badge bg-danger">Sécurisation Wi-Fi (WPA3)</span>
+              <span class="badge bg-secondary">ToIP (Asterisk/PJSIP)</span>
+              <span class="badge bg-secondary">Fibres optiques / Cuivre</span>
+              <span class="badge bg-secondary">Protocoles de routage</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+          <h3>Niveaux de développement & Apprentissages critiques</h3>
+          <hr>
+          <div class="row g-4">
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-dark card-n1" data-bs-toggle="collapse" data-bs-target="#panelN1">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex justify-content-between align-items-center title-n1">
+                    Niveau 1 : Découvrir
+                    <i class="bi bi-chevron-down chevron-icon"></i>
+                  </h5>
+                  <p class="text-muted small">Découvrir les transmissions et la ToIP</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-dark card-n2" data-bs-toggle="collapse" data-bs-target="#panelN2">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex justify-content-between align-items-center title-n2">
+                    Niveau 2 : Maîtriser
+                    <i class="bi bi-chevron-down chevron-icon"></i>
+                  </h5>
+                  <p class="text-muted small">Maîtriser les composantes de connexion</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card h-100 border-0 shadow-sm text-dark card-n3" data-bs-toggle="collapse" data-bs-target="#panelN3">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex justify-content-between align-items-center title-n3">
+                    Niveau 3 : Déployer
+                    <i class="bi bi-chevron-down chevron-icon"></i>
+                  </h5>
+                  <p class="text-muted small">Déployer une solution de connexion ou sur IP</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="collapse mt-4" id="panelN1">
+            <div class="p-4 rounded shadow-sm panel-n1">
+              <h5 class="fw-bold mb-4 panel-title-n1">Apprentissages Critiques — Niveau 1</h5>
+              <div class="accordion" id="accordionN1">
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac12_01">
+                      AC12.01 — Mesurer, analyser et commenter les signaux
+                    </button>
+                  </h2>
+                  <div id="ac12_01" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j'ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l'action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l'ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu'en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d'amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac12_02">
+                      AC12.02 — Caractériser des systèmes de transmissions élémentaires et découvrir la modélisation mathématique de leur fonctionnement
+                    </button>
+                  </h2>
+                  <div id="ac12_02" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j'ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l'action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l'ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu'en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d'amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac12_03">
+                      AC12.03 — Déployer des supports de transmission
+                    </button>
+                  </h2>
+                  <div id="ac12_03" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j'ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l'action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l'ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu'en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d'amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac12_04">
+                      AC12.04 — Connecter les systèmes de ToIP
+                    </button>
+                  </h2>
+                  <div id="ac12_04" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j'ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l'action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l'ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu'en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d'amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac12_05">
+                      AC12.05 — Communiquer avec un tiers (client, collaborateur...) et adapter son discours et sa langue à son interlocuteur
+                    </button>
+                  </h2>
+                  <div id="ac12_05" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j'ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l'action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l'ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu'en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d'amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse mt-4" id="panelN2">
+            <div class="p-4 rounded shadow-sm text-center panel-n2">
+              <i class="bi bi-lock-fill fs-3 mb-2 d-block lock-icon-n2"></i>
+              <p class="text-muted small mb-0">Contenu disponible en BUT2</p>
+            </div>
+          </div>
+
+          <div class="collapse mt-4" id="panelN3">
+            <div class="p-4 rounded shadow-sm text-center panel-n3">
+              <i class="bi bi-lock-fill fs-3 mb-2 d-block lock-icon-n3"></i>
+              <p class="text-muted small mb-0">Contenu disponible en BUT3</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+<div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+          <h3>Mes réalisations (Comptes-rendus)</h3>
+          <hr>
+          <div class="card border-0 shadow-sm p-4">
+            <div class="row g-3">
+              
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF1">
+                  <h6 class="mb-1 small fw-bold">Séance n°1 : Introduction LTspice</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Découverte du logiciel et simulation d'un pont diviseur de tension.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF2">
+                  <h6 class="mb-1 small fw-bold">Séance n°2 : Régime impulsionnel</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Modélisation d'un câble Ethernet et observation des déformations.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF3">
+                  <h6 class="mb-1 small fw-bold">Séance n°3 : Régime sinusoïdal</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Analyse de l'atténuation en fréquences et de la bande passante.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF4">
+                  <h6 class="mb-1 small fw-bold">Séance n°4 : Découverte Simulink</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Premiers pas sur l'environnement Simulink de Matlab.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF5">
+                  <h6 class="mb-1 small fw-bold">Séance n°5 : Simulation RLCG</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Étude de la vitesse de propagation et des retards du signal.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="p-3 rounded card-realisation" data-bs-toggle="modal" data-bs-target="#modalPDF6">
+                  <h6 class="mb-1 small fw-bold">Séance n°6 : Bilan de la SAE</h6>
+                  <p class="text-muted mb-0" style="font-size: 0.85rem;">Synthèse finale, calculs linéiques et conseils au client.</p>
+                  <small class="text-primary fw-bold">Lire le dossier →</small>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <div class="modal fade" id="modalPDF1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°1</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_1.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPDF2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°2</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_2.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPDF3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°3</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_3.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPDF4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°4</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_4.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPDF5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°5</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_5.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalPDF6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content border-0">
+        <div class="modal-header bg-dark text-white">
+          <h5 class="modal-title small">Dossier : Séance n°6</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-0 bg-dark">
+          <iframe src="../assets\pdf\seance_6.pdf" class="pdf-container"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script>AOS.init({ duration: 1000, once: true });</script>
+
+</body>
+</html>

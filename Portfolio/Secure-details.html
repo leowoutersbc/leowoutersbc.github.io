@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Détails Compétence - Connect</title>
+
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Style pour la flèche de retour fixe */
+    .back-arrow {
+      position: fixed;
+      left: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+      background: var(--accent-color);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      transition: 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .back-arrow:hover {
+      background: #034a86;
+      color: white;
+      left: 20px;
+    }
+    .details-content { padding-top: 100px; }
+    .skill-badge { background: #e7f1ff; color: var(--accent-color); padding: 5px 15px; border-radius: 50px; font-weight: 600; }
+    .card-n1 { border-top: 5px solid #d4edda !important; cursor: pointer; }
+    .card-n2 { border-top: 5px solid #28a745 !important; cursor: pointer; }
+    .title-n1 { color: #155724; }
+    .title-n2 { color: #1e7e34; }
+    .panel-n1 { background-color: #f0fff4; border-left: 4px solid #28a745; }
+    .panel-n2 { background-color: #e8f5e9; border-left: 4px solid #1e7e34; }
+    .panel-title-n1 { color: #155724; }
+    .panel-title-n2 { color: #1e7e34; }
+    .chevron-icon { transition: transform 0.3s; }
+    .card-realisation { border: 1px solid #e9ecef; transition: 0.3s; cursor: pointer; }
+    .card-realisation:hover { border-color: #0d6efd; background-color: #f8f9fa; }
+  </style>
+</head>
+
+<body>
+
+  <a href="../index.html#portfolio" class="back-arrow" title="Retour au portfolio">
+    <i class="bi bi-arrow-left"></i>
+  </a>
+
+<main id="main" class="details-content">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Administrer un système d’information sécurisé</h2>
+        <span class="skill-badge">Compétence PN R&T</span>
+      </div>
+
+      <div class="row gy-4">
+        <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
+          <img src="../assets/img/masonry-portfolio/secure.png" class="img-fluid rounded-4 mb-4" alt="">
+          <h3>Situations professionnelles</h3>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-success"></i> Analyse de l’existant et étude des besoins de sécurité d’une petite structure</li>
+            <li class="mb-2"><i class="bi bi-arrow-right-short text-success"></i> Évolution et mise en conformité du système d’information d’une entreprise</li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="bg-light p-4 rounded-4 shadow-sm">
+            <h4>Critères d'évaluation</h4>
+            <ul class="list-unstyled">
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Compromis sécurité/contraintes d'utilisation</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Respect des normes et du cadre juridique</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Intégration des dernières technologies</li>
+              <li class="mb-3"><i class="bi bi-check-circle-fill text-success me-2"></i> Travail en équipe et sensibilisation</li>
+            </ul>
+          </div>
+          
+          <div class="mt-4 p-4 border rounded-4">
+            <h5>Arsenal Cybersécurité</h5>
+            <div class="d-flex flex-wrap gap-2 mt-2">
+              <span class="badge bg-success">SIEM & SOC</span>
+              <span class="badge bg-success">Cryptographie (AES, RSA)</span>
+              <span class="badge bg-dark">Kali Linux</span>
+              <span class="badge bg-secondary">EBIOS Risk Manager</span>
+              <span class="badge bg-secondary">Wireshark / Nmap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+          <h3>Niveaux de développement & Apprentissages critiques</h3>
+          <hr>
+          <div class="row g-4 justify-content-center">
+
+            <div class="col-md-5">
+              <div class="card h-100 border-0 shadow-sm text-dark card-n1" data-bs-toggle="collapse" data-bs-target="#panelN1">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex justify-content-between align-items-center title-n1">
+                    Niveau 1 : Sensibiliser
+                    <i class="bi bi-chevron-down chevron-icon"></i>
+                  </h5>
+                  <p class="text-muted small">Sensibiliser aux vulnérabilités et remédiations</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="card h-100 border-0 shadow-sm text-dark card-n2" data-bs-toggle="collapse" data-bs-target="#panelN2">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold d-flex justify-content-between align-items-center title-n2">
+                    Niveau 2 : Mettre en œuvre
+                    <i class="bi bi-chevron-down chevron-icon"></i>
+                  </h5>
+                  <p class="text-muted small">Mettre en œuvre un SI sécurisé pour une petite structure</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="collapse mt-4" id="panelN1">
+            <div class="p-4 rounded shadow-sm panel-n1">
+              <h5 class="fw-bold mb-4 panel-title-n1">Apprentissages Critiques — Niveau 1</h5>
+              <div class="accordion" id="accordionN1">
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_01">
+                      AC14.01 — Utiliser les bonnes pratiques de cybersécurité
+                    </button>
+                  </h2>
+                  <div id="ac14_01" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_02">
+                      AC14.02 — Mettre en œuvre les outils de sécurisation réseau
+                    </button>
+                  </h2>
+                  <div id="ac14_02" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_03">
+                      AC14.03 — Sécuriser les systèmes d’exploitation
+                    </button>
+                  </h2>
+                  <div id="ac14_03" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_04">
+                      AC14.04 — Choisir les outils cryptographiques adaptés
+                    </button>
+                  </h2>
+                  <div id="ac14_04" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_05">
+                      AC14.05 — Connaître les différents types d’attaque
+                    </button>
+                  </h2>
+                  <div id="ac14_05" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_06">
+                      AC14.06 — Comprendre des documents techniques en anglais (cybersécurité)
+                    </button>
+                  </h2>
+                  <div id="ac14_06" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="collapse mt-4" id="panelN2">
+            <div class="p-4 rounded shadow-sm panel-n2">
+              <h5 class="fw-bold mb-4 panel-title-n2">Apprentissages Critiques — Niveau 2</h5>
+              <div class="accordion" id="accordionN2">
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_21">
+                      AC14.21 — Participer activement à une analyse de risque
+                    </button>
+                  </h2>
+                  <div id="ac14_21" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_22">
+                      AC14.22 — Mettre en œuvre des outils avancés de sécurisation
+                    </button>
+                  </h2>
+                  <div id="ac14_22" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_23">
+                      AC14.23 — Sécuriser les services
+                    </button>
+                  </h2>
+                  <div id="ac14_23" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item border-0 mb-3 rounded overflow-hidden shadow-sm">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#ac14_24">
+                      AC14.24 — Proposer une architecture sécurisée de SI
+                    </button>
+                  </h2>
+                  <div id="ac14_24" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <div class="row g-4 mb-4">
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-primary"><h6 class="fw-bold text-dark"><i class="bi bi-bullseye me-2"></i>Ce que j’ai fait & Pourquoi</h6><p class="small text-muted mb-0">*Décris ici l’action concrète réalisée et son objectif.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-success"><h6 class="fw-bold text-dark"><i class="bi bi-tools me-2"></i>Comment je l’ai fait</h6><p class="small text-muted mb-0">*Détaille la méthode et les outils utilisés.*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-warning"><h6 class="fw-bold text-dark"><i class="bi bi-exclamation-triangle me-2"></i>Difficultés & Apprentissages</h6><p class="small text-muted mb-0">*Quelles ont été les difficultés et qu’en as-tu retiré ?*</p></div></div>
+                        <div class="col-md-6"><div class="p-3 bg-light rounded h-100 border-start border-4 border-info"><h6 class="fw-bold text-dark"><i class="bi bi-lightbulb me-2"></i>Comment je ferais autrement</h6><p class="small text-muted mb-0">*Perspectives d’amélioration pour la prochaine fois.*</p></div></div>
+                      </div>
+                      <h6 class="fw-bold text-dark mb-3"><i class="bi bi-image me-2"></i>Preuves visuelles</h6>
+                      <div class="row g-3">
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                        <div class="col-md-6"><img src="" alt="Preuve" class="img-fluid rounded border w-100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row mt-5" data-aos="fade-up">
+        <div class="col-12">
+            <h3>Mes réalisations (Preuves)</h3>
+            <hr>
+            <div class="card mb-3 border-0 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">Soon</h5>
+                    <p class="card-text">...</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/aos/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, mirror: false });
+  </script>
+
+</body>
+</html>
