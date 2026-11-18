@@ -19,7 +19,7 @@ window.PORTFOLIO = {
    "Installation et administration des services réseau informatique d'une entreprise",
    "Déploiement et administration des solutions fixes pour les clients d'un opérateur de télécommunication"
   ],
-  "alternance": "Chez Eiffage, je mets à jour des schémas réseau et des cartes de déploiement (fichiers KMZ) : c'est la documentation qui permet aux techniciens d'intervenir sans erreur.",
+  "alternance": "Je tiens à jour la documentation technique utilisée par les équipes terrain : schémas réseau et cartographies de déploiement (fichiers KMZ). Une documentation juste permet aux techniciens d'intervenir vite et sans erreur, et m'oblige à comprendre l'architecture réelle des installations.",
   "levels": [
    {
     "n": 1,
@@ -1314,7 +1314,7 @@ window.PORTFOLIO = {
    "Gestion des services d'un ensemble de clients entreprises d'un opérateur",
    "Gestion du déploiement de nouvelles infrastructures"
   ],
-  "alternance": "Chez Eiffage, je traite des demandes d'assistance dans l'outil « Espace Pilotage » avec les techniciens, et j'ai résolu mon premier incident en autonomie. C'est directement la composante « mettre en place des processus opérationnels de gestion d'incidents » et « piloter les acteurs terrain ».",
+  "alternance": "Je fais partie de la chaîne de support : je prends en charge et je suis les demandes d'assistance dans l'outil de ticketing « Espace Pilotage », je diagnostique les pannes avec les techniciens et je résous désormais des incidents en autonomie. Je participe aussi aux déploiements sur le terrain. C'est le cœur des composantes « processus opérationnels de gestion d'incidents » et « piloter les acteurs terrain ».",
   "levels": [
    {
     "n": 1,
@@ -1527,7 +1527,7 @@ window.PORTFOLIO = {
    "Déploiement et administration des services de communication",
    "Administration des services multimédia"
   ],
-  "alternance": "Chez Eiffage, j'aide au paramétrage de caméras de surveillance (une vingtaine) et de leurs batteries. C'est une première approche de la vidéo-surveillance, au programme du niveau 2 de cette compétence.",
+  "alternance": "Je participe au déploiement de systèmes de vidéosurveillance : paramétrage et mise en service d'une vingtaine de caméras sur IP et de leur alimentation autonome par batteries. C'est une mise en pratique directe des services vidéo, au programme du niveau 2 de cette compétence.",
   "levels": [
    {
     "n": 1,
