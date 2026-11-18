@@ -98,7 +98,7 @@
     ${comp.alternance ? `
     <div class="alt-note">
       <i class="bi bi-building"></i>
-      <div><strong>En alternance chez Eiffage</strong><p>${esc(comp.alternance)}</p></div>
+      <div><strong>En alternance chez Eiffage Énergie Systèmes</strong><p>${esc(comp.alternance)}</p></div>
     </div>` : ""}
 
     <h2 style="font-size:1.4rem">Niveaux et apprentissages critiques</h2>
