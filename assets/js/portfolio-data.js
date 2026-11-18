@@ -19,7 +19,6 @@ window.PORTFOLIO = {
    "Installation et administration des services réseau informatique d'une entreprise",
    "Déploiement et administration des solutions fixes pour les clients d'un opérateur de télécommunication"
   ],
-  "alternance": "Je tiens à jour la documentation technique utilisée par les équipes terrain : schémas réseau et cartographies de déploiement (fichiers KMZ). Une documentation juste permet aux techniciens d'intervenir vite et sans erreur, et m'oblige à comprendre l'architecture réelle des installations.",
   "levels": [
    {
     "n": 1,
@@ -458,14 +457,13 @@ window.PORTFOLIO = {
       "title": "Travailler en équipe",
       "sources": [
        "SAÉ 3.03",
-       "SAÉ ROM TEL",
-       "Alternance"
+       "SAÉ ROM TEL"
       ],
       "status": "ok",
       "blocks": [
        [
         "Ce que j'ai fait",
-        "Dans la SAÉ 3.03, on a monté un lab EVE-NG partagé : une seule VM, avec des comptes par membre et un accès à distance via Tailscale pour ceux qui travaillent de chez eux. En SAÉ téléphonie, j'ai relié mon serveur Asterisk à celui de Tristan pour que nos téléphones s'appellent. En entreprise, je travaille avec les techniciens sur le terrain."
+        "Dans la SAÉ 3.03, on a monté un lab EVE-NG partagé : une seule VM, avec des comptes par membre et un accès à distance via Tailscale pour ceux qui travaillent de chez eux. En SAÉ téléphonie, j'ai relié mon serveur Asterisk à celui de Tristan pour que nos téléphones s'appellent."
        ],
        [
         "Pourquoi je l'ai fait",
@@ -517,7 +515,6 @@ window.PORTFOLIO = {
    "Déploiement et administration des accès sans fil pour l'entreprise",
    "Déploiement des systèmes de communications"
   ],
-  "alternance": "",
   "levels": [
    {
     "n": 1,
@@ -905,7 +902,6 @@ window.PORTFOLIO = {
    "Automatisation du déploiement et de la maintenance des outils logiciels",
    "Développement d'outils informatiques à usage interne d'une équipe"
   ],
-  "alternance": "",
   "levels": [
    {
     "n": 1,
@@ -1314,7 +1310,6 @@ window.PORTFOLIO = {
    "Gestion des services d'un ensemble de clients entreprises d'un opérateur",
    "Gestion du déploiement de nouvelles infrastructures"
   ],
-  "alternance": "Je fais partie de la chaîne de support : je prends en charge et je suis les demandes d'assistance dans l'outil de ticketing « Espace Pilotage », je diagnostique les pannes avec les techniciens et je résous désormais des incidents en autonomie. Je participe aussi aux déploiements sur le terrain. C'est le cœur des composantes « processus opérationnels de gestion d'incidents » et « piloter les acteurs terrain ».",
   "levels": [
    {
     "n": 1,
@@ -1527,7 +1522,6 @@ window.PORTFOLIO = {
    "Déploiement et administration des services de communication",
    "Administration des services multimédia"
   ],
-  "alternance": "Je participe au déploiement de systèmes de vidéosurveillance : paramétrage et mise en service d'une vingtaine de caméras sur IP et de leur alimentation autonome par batteries. C'est une mise en pratique directe des services vidéo, au programme du niveau 2 de cette compétence.",
   "levels": [
    {
     "n": 1,
